@@ -36,8 +36,15 @@ Route::middleware('auth')->group(function () {
 });
 
 // routes/web.php
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
+Route::get('/login', function () {
+    return Inertia::render('Auth/Login');
+})->name('login');
+
+Route::get('/register', function () {
+    return Inertia::render('Auth/Register');
+})->name('register');
 require __DIR__.'/auth.php';

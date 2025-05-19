@@ -5,13 +5,14 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
     plugins: [
         laravel({
-            input: 'resources/js/app.jsx',
+            input: [
+                'resources/js/app.jsx',
+            ],
             refresh: true,
         }),
         react(),
     ],
     server: {
-        port: 8001, // 👈 Change this port as needed
+        port: 8001,
     },
 });
-

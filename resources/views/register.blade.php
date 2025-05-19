@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Laravel + React</title>
+    <title>Register</title>
     @viteReactRefresh
-    @vite('resources/js/app.jsx')
+    @vite('resources/js/components/Register.jsx')
 </head>
 <body>
     <div id="root"></div>
 </body>
 </html>
+
